@@ -1,0 +1,299 @@
+html {
+    background-color: rgb(230, 230, 230);
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+
+body {
+    margin: 0;
+    perspective: 1000px;
+}
+
+
+.article-title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+}
+
+.article-content-sleek {
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+.montserrat-headerfont {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+
+
+nav ul {
+    margin: 0;
+    font-size: x-large;
+    display: flex;
+    flex: 2;    
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+}
+
+nav a:hover{
+    color: grey;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav a:active {
+    color:rgb(94, 94, 94);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    float:right;
+}
+
+article#intro {
+    background-image: url("backgroundImage.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 500px;
+    min-height: 400px;
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+article#intro section {
+    text-align: left;
+}
+
+article#intro-overlay {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+
+
+    color: white;
+    text-align: center;
+}
+
+article#about-me {
+    text-align: center;
+    border: 2px solid grey;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    margin: 0px;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+article {
+    text-align: center;
+    padding: 10px;
+    padding-top: 1px;
+    border: 1px solid grey;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+article#projects {
+    background-color: rgb(230, 230, 230)
+
+}
+
+section.project-section {
+    height: 300px;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+img.project-img {
+    max-width: 300px;
+    float:left;
+    
+}
+
+article#skills {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    perspective: 1000px;
+}
+
+
+.mini-skill-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    text-align: left;
+    padding: 0;
+}
+
+section.skill-section {
+    height: 250px;
+    width: 400px;
+    max-width: 400px;
+    margin: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(250, 247, 247);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    background-image: 
+                linear-gradient(-160deg, transparent 50%, rgba(0, 0, 0, 0.3) 50%), 
+                linear-gradient(160deg, transparent 50%, rgba(0, 0, 0, 0.3) 50%);
+    background-size: 30px 475px;
+    background-position: 0 0, 0px 0px; 
+    overflow: hidden;
+}
+
+.rotate-test {
+    transform-style: preserve-3d;
+    transition: transform 0.2s;
+}
+
+
+h3#web-dev {
+    background-color: rgb(247, 134, 70);
+    margin-bottom: 0px;
+    min-height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0px
+}
+
+
+
+img.skill-top {
+    min-width: 400px;
+    height: auto;
+    object-fit: cover;
+    min-height: 50px;
+    padding: 0px;
+    
+
+    
+}
+
+h3#unity {
+    
+    background-color: rgb(111, 120, 238);
+    margin-bottom: 0px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+div.skill-dot-seperator {
+    border-bottom: 2px dashed black;
+    height: 2px;
+    margin: 0px;
+    pad: 0px;
+    margin-top: auto;
+}
+
+h4#expw {
+    margin: 0px;
+    text-align: left;
+}
+
+
+
+ul.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: left;
+    gap: 10px;
+    padding: 5px;
+}
+
+ul.row > li {
+    flex: 1 0 30%
+}
+
+footer {
+    background-color: rgb(133, 133, 133);
+    border-top: 1px solid grey;
+    color: white;
+}
+
+
+.my-svg {
+    color: white;
+    transition: all 0.5s;
+    transform-origin: 50% 50%;
+    transform: scale(0.5);
+    padding: 15px;
+}
+
+.my-svg:hover {
+    color: grey;
+    transform: scale(1.2);
+    padding: 0px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+footer > p{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+a.special{
+    padding-bottom: 0px;
+    margin-bottom: 10%;
+    transform-origin: 50% 50%;
+    transform: scale(0.5);
+    margin-top: 0px;
+}
+
+a.special:hover {
+    transform: scale(1.2);
+}
