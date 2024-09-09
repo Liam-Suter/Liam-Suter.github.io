@@ -134,6 +134,16 @@ section.project-section {
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
 }
 
+section.project-section > p{
+    text-align: left;
+    margin-left: 320px;
+    margin-right: 20px;
+}
+
+section.project-section > h3 {
+    padding-top: 20px;
+}
+
 img.project-img {
     max-width: 300px;
     float:left;
@@ -202,6 +212,44 @@ h3#web-dev {
     margin-top: 0px
 }
 
+h3#unity {
+    
+    background-color: rgb(111, 120, 238);
+    margin-bottom: 0px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h3#unreal {
+    
+    background-color: rgb(205, 215, 221);
+    margin-bottom: 0px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h3#python {
+    
+    background-color: rgb(102, 233, 110);
+    margin-bottom: 0px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+h3.skill-bottom {
+    margin-bottom: 0px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0px;
+}
+
 
 
 img.skill-top {
@@ -215,15 +263,6 @@ img.skill-top {
     
 }
 
-h3#unity {
-    
-    background-color: rgb(111, 120, 238);
-    margin-bottom: 0px;
-    height: 40px;
-    padding-top: 20px;
-    text-align: center;
-    margin-top: 0px;
-}
 
 div.skill-dot-seperator {
     border-bottom: 2px dashed black;
@@ -270,7 +309,7 @@ footer {
 }
 
 .my-svg:hover {
-    color: grey;
+    color: rgb(201, 200, 200);
     transform: scale(1.2);
     padding: 0px;
     margin-left: 15px;
