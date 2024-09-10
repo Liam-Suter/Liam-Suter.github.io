@@ -71,11 +71,11 @@ header {
 
 article#intro {
     background-image: url("backgroundImage.jpg");
-    background-size:cover;
+    background-size: 1980 800;
     background-position: center;
     background-repeat: no-repeat;
     min-width: 500px;
-    min-height: 400px;
+    min-height: 800px;
     margin: 0;
     padding: 0;
 
@@ -88,7 +88,7 @@ article#intro section {
 
 article#intro-overlay {
     position: absolute;
-    top: 180px;
+    top: 300px;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 0px;
