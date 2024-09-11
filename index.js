@@ -1,8 +1,8 @@
 //Later fix. for balatro rotation, add an unmoving element that holds the moving part
 //That unmoving part will act as extra hit detection
 
-const rotators = document.querySelectorAll(".rotate-test")
-var mouseCoordinates = [0,0]
+const rotators = document.querySelectorAll(".rotate-test");
+var mouseCoordinates = [0,0];
 
 var activeElement = null;
 var activeElementCenter = [0, 0];
@@ -26,6 +26,19 @@ rotator.addEventListener("mouseleave", (event) => {
 });
 });
 
+
+const linkButtons = document.querySelectorAll(".my-svg");
+
+linkButtons.forEach(button => {
+    button.addEventListener("click", activateLink(button));
+})
+
+
+function activateLink(element) {
+    if (element.classList.contains("github")) {
+        window.location.href = "https://github.com/DJfox58";
+    }
+}
 
 function resetElement(event) {
     event.target.style.transform = "rotateX(0deg)";
