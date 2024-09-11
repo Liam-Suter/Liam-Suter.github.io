@@ -26,19 +26,46 @@ rotator.addEventListener("mouseleave", (event) => {
 });
 });
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            entry.target.classList.remove('hidden');
+        }
+    });
+});
 
-const linkButtons = document.querySelectorAll(".my-svg");
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((element) => observer.observe(element));
 
-linkButtons.forEach(button => {
-    button.addEventListener("click", activateLink(button));
+
+const durationV = 5000;
+const durationH = 8000;
+const startTime = performance.now();
+
+rotators.forEach((card) => {
+    card.timeOffsetms = Math.random()*5000;
 })
 
-
-function activateLink(element) {
-    if (element.classList.contains("github")) {
-        window.location.href = "https://github.com/DJfox58";
-    }
+function animate(timestamp) {
+    rotators.forEach((card) => {
+        if (card != activeElement) {
+            const elapsedTime = timestamp - (startTime+card.timeOffsetms);
+            progressV = (elapsedTime % durationV) / durationV;
+            progressH = (elapsedTime % durationH) / durationH;
+            //console.log(Math.sin(progress*Math.PI*2)*30);
+            card.style.transform = `rotateX(${Math.sin(progressV*Math.PI*2)*7}deg) rotateY(${Math.sin(progressH*Math.PI*2)*4}deg)`;
+            console.log(card.style);
+        }
+    });
+    requestAnimationFrame(animate);
 }
+
+
+
+
+requestAnimationFrame(animate);
+
 
 function resetElement(event) {
     event.target.style.transform = "rotateX(0deg)";
@@ -60,9 +87,7 @@ function rotateElementNew() {
     activeElement.style.transform = `rotateX(${xDegrees}deg) rotateY(${yDegrees}deg)`;
     }
 
-function resetElement(event) {
-    event.target.style.transform = "rotateX(0deg)";
-}
+
 
 
 
