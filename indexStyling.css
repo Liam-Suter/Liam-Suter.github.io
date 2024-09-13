@@ -50,6 +50,14 @@ body {
   font-style: italic;
 }
 
+bold {
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
+  color: rgb(238, 75, 75);
+}
+
 
 .montserrat-headerfont {
     font-family: "Montserrat", sans-serif;
