@@ -15,40 +15,32 @@
 
   <body>
 
-
-    <header>
-        <nav class="montserrat-headerfont">
-            <ul>
-                <li><a href="#about-me">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#footer">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
+    
+        <header>
+            <nav class="article-content-sleek navbar">
+                <ul>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <!-- Intro-->
     <article id="intro">
-
-
-
     </article>
 
-    <article id="intro-overlay" class="montserrat-headerfont">
+    <article id="intro-overlay" class="article-content-strong-alt hidden">
 
         <h1> Liam Suter</h1>
-        <h2> CS Student @ UWaterloo</h2>
-
-
-
-        
-
-
-
     </article>
 
-    <article id = "intro-overlay-2" class = "montserrat-headerfont">
+    <article id="intro-overlay-3" class="article-content-strong-alt hidden">
+        <h2>CS Student @ Uwaterloo</h2>
+    </article>
+
+    <article id = "intro-overlay-2" class = "montserrat-headerfont hidden">
         <a class="special" href="https://github.com/DJfox58" target="_blank">
             <svg class="my-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="70px" height="70px" viewBox="0 0 100 100" enable-background="new 0 0 70 70" xml:space="preserve">
@@ -108,11 +100,23 @@
 
     <!-- About me -->
     <article id="about-me">
-        <h2 class="article-title">Hi There!</h2>
-        <h4 class="article-content-sleek">I'm Liam, a Computer Science student studying at the 
-            University of Waterloo. If I'm not solving proofs, I'm probably working on a game or some other fun project!</h4>
-
-
+        <div id="about-me-container">
+            <div id="about-me-mini-container2" class="hidden">
+                <img id ="profile-img" src="webbyprof.jpeg">
+                <h2 class="article-content-sleek">Hello!</h2>
+            </div>
+            <div id="about-me-mini-container" class="hidden">
+                <h4 id ="about-me-1" class="article-content-sleek">I'm Liam, a First Year <bold>Computer Science Student</bold> studying at the 
+                    University of Waterloo. I'm an aspiring <bold>Game and Full Stack Developer.</bold></h4>
+                <h4 id="about-me-2" class="article-content-sleek"> I'm also hoping learning more about <bold>microprocessors</bold>. Expect to see some hardware projects in the near future! </h5>
+                <h5 id="about-me-3" class="article-content-strong"> I discovered programming 
+                    in my second year 
+                    of highschool and fell in love with it right away. 
+                    I really enjoy creating things, and programming gives me the freedom to easily 
+                    and accessibly dive into whatever topic I want to learn about. <br>
+                    No matter what I'm doing, I always want to make something that I can be proud of.</h5>
+            </div>
+        </div>
     </article>
 
     <!-- Projects -->
@@ -400,15 +404,4 @@
         </a>
 
     </footer>
-
-
-
-
-
-
-
-
-
-
-
   </body>
