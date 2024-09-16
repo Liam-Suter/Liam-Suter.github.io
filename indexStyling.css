@@ -265,7 +265,7 @@ article#about-me {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    margin-left: 150px;
+    margin-left: 10%;
 }
 
 @media (max-width: 1200px) {
