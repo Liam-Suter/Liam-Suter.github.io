@@ -150,7 +150,7 @@ header {
 }
 
 article#intro {
-    background-image: url("backgroundImage.jpg");
+    background-image: url("Media/backgroundImage.jpg");
     background-size: 1980 800;
     background-position: center;
     background-repeat: no-repeat;
