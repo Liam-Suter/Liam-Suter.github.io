@@ -2,15 +2,12 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Liam Suter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@1,800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="indexStyling.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="index.js" defer></script>
@@ -18,13 +15,13 @@
 
   <body>
 
-    
         <header>
             <nav class="nunito-sans navbar">
                 <ul>
                     <li><a href="#about-me">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="Media/gameDevResume.pdf" target="_blank" rel="noopener">Résumé</a></li>
                     <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
@@ -32,21 +29,12 @@
 
     <!-- Intro-->
     <article id="intro">
-    </article>
+        <p id="intro-name" class="nunito-sans hidden">Liam Suter</p>
+        <p id="intro-subtitle" class="nunito-sans-2 hidden">CS Student @ UWaterloo</p>
 
-    <article id="intro-overlay" class="nunito-sans hidden">
-
-        <p> Liam Suter</p>
-    </article>
-
-    <article id="intro-overlay-3" class="nunito-sans-2 hidden">
-        <p>CS Student @ Uwaterloo</p>
-    </article>
-
-    <article id = "intro-overlay-2" class = "montserrat-headerfont hidden">
-        <a class="special" href="https://github.com/liam-suter" target="_blank">
-            <svg class="my-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="70px" height="70px" viewBox="0 0 100 100" enable-background="new 0 0 70 70" xml:space="preserve">
+        <div id="intro-links" class="hidden">
+            <a class="intro-link" href="https://github.com/liam-suter" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg class="my-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <g>
                     <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M49.998,11.963C28.461,11.963,11,29.425,11,50.965
                 c0,17.231,11.172,31.849,26.671,37.003c1.952,0.361,2.662-0.84,2.662-1.877c0-0.924-0.034-3.375-0.051-6.633
@@ -59,12 +47,9 @@
                     c0,1.045,0.701,2.26,2.681,1.873C77.836,82.798,89,68.191,89,50.965C89,29.425,71.539,11.963,49.998,11.963z"/>
                 </g>
             </svg>
-        </a>
-
-
-        <a class="special" href="https://www.linkedin.com/in/liam-suter" target="_blank">
-            <svg class="my-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="70px" height="70px" viewBox="0 0 100 100" enable-background="new 0 0 70 70" xml:space="preserve">
+            </a>
+            <a class="intro-link" href="https://www.linkedin.com/in/liam-suter" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg class="my-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <g>
                     <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M80.667,14H19.315C16.381,14,14,16.325,14,19.188v61.617C14,83.672,16.381,86,19.315,86h61.352
                         C83.603,86,86,83.672,86,80.805V19.188C86,16.325,83.603,14,80.667,14z M35.354,75.354H24.67V40.995h10.684V75.354z M30.012,36.297
@@ -74,11 +59,9 @@
                         c10.806,0,12.802,7.114,12.802,16.369V75.354z"/>
                 </g>
             </svg>
-        </a>
-
-        <a class="special" href="mailto:liamsuter0@gmail.com" target="_blank">
-            <svg class="my-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="70px" height="70px" viewBox="0 0 100 100" enable-background="new 0 0 70 70" xml:space="preserve">
+            </a>
+            <a class="intro-link" href="mailto:liamsuter0@gmail.com" aria-label="Email">
+                <svg class="my-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <g>
                     <path fill="currentColor" d="M85.944,20.189H14.056c-1.41,0-2.556,1.147-2.556,2.557v5.144c0,0.237,0.257,0.509,0.467,0.619
                         l37.786,21.583c0.098,0.057,0.208,0.083,0.318,0.083c0.112,0,0.225-0.029,0.324-0.088L87.039,28.53
@@ -95,9 +78,8 @@
                         c0.082,0.037,0.169,0.055,0.257,0.055c0.157,0,0.314-0.059,0.434-0.171L34.334,49.601z"/>
                 </g>
             </svg>
-
-
-        </a>
+            </a>
+        </div>
     </article>
 
 
@@ -105,7 +87,7 @@
     <article id="about-me">
         <div id="about-me-container">
             <div id="about-me-mini-container2" class="hidden">
-                <img id ="profile-img" src="Media/profile.jpeg">
+                <img id ="profile-img" src="Media/profile.jpeg" alt="Liam Suter" loading="lazy">
                 <h2 class="article-content-sleek">Hello!</h2>
             </div>
             <div id="about-me-mini-container" class="hidden">
@@ -128,7 +110,7 @@
 
 
         <section class="project-section hidden">
-            <img src="Media/Arachn0idArtCropped.png" alt="Arachn0id" class = "project-img">
+            <img src="Media/Arachn0idArtCropped.png" alt="Arachn0id" class = "project-img" loading="lazy">
             <div class="project-content-container">
                 <h3 class="article-title">ARACHN0ID</h3>
                 <p class="article-content-sleek">High-octane third-person wave shooter putting you in control of a top secret government war machine, codename: <bold>ARACHN0ID.</bold>
@@ -145,11 +127,13 @@
 
 
         <section class="project-section hidden">
-            <img src="Media/ProjectWendigo.gif" alt="Project Wendigo" class = "project-img">
+            <video src="Media/ProjectWendigo.mp4" class="project-img" aria-label="Project Wendigo" autoplay muted loop playsinline>
+                <img src="Media/ProjectWendigo.gif" alt="Project Wendigo">
+            </video>
             <div class="project-content-container">
                 <h3 class="article-title">Project Wendigo</h3>
                 <p class="article-content-sleek"><bold>Multiplayer social deception game</bold> set in a snowy abandoned mining town. A research team investigating
-                    the <bold>dissapearance</bold> of an entire town breaks down as they begin to suspect that one of their own has been <bold>taken</bold>, replaced by a creature
+                    the <bold>disappearance</bold> of an entire town breaks down as they begin to suspect that one of their own has been <bold>taken</bold>, replaced by a creature
                     that <bold>isn't entirely them.</bold> The only way to escape with their lives is to uncover the <bold>truth</bold> behind the town's bloodied past and discover the
                     <bold>traitor</bold> within their ranks.
 
@@ -162,13 +146,15 @@
 
 
         <section class="project-section hidden">
-            <img src="Media/TinyTechnician.gif" alt="Tiny Technician" class = "project-img">
+            <video src="Media/TinyTechnician.mp4" class="project-img" aria-label="Tiny Technician" autoplay muted loop playsinline>
+                <img src="Media/TinyTechnician.gif" alt="Tiny Technician">
+            </video>
             <div class="project-content-container">
                 <h3 class="article-title">Tiny Technician</h3>
-                <p class="article-content-sleek">A retro puzzler inspired by 2010's nitrome-era 
+                <p class="article-content-sleek">A retro puzzler inspired by 2010s Nitrome-era 
                     browser games. Made in <bold>Unity</bold> for the 2024 GMTK game jam in <bold>4 days </bold>by myself & 3 others. 
                     The game placed in the <bold>top 5% most rated games</bold> in the jam. 
-                    I had a blast shipping a complete project for the jam, and I learned a lot about what goes into that process
+                    I had a blast shipping a complete project for the jam, and I learned a lot about what goes into that process.
                     <br><bold>Update:</bold> We are currently working on a <bold>full release</bold> of the game.
                 </p>
                 <div class="link-button-container">
@@ -179,7 +165,9 @@
 
 
         <section class="project-section hidden">
-            <img src="Media/gecko.gif" alt="Procedural Gecko" class = "project-img">
+            <video src="Media/gecko.mp4" class="project-img" aria-label="Procedural Gecko" autoplay muted loop playsinline>
+                <img src="Media/gecko.gif" alt="Procedural Gecko">
+            </video>
             <div class = "project-content-container">
                 <h3 class="article-title">Procedural Animation Animals</h3>
                 <p class="article-content-sleek"> A collection of animals simulated in <bold>Python </bold>using various <bold>procedural animation techniques</bold>.
@@ -197,13 +185,13 @@
         </section>
 
         <section class="project-section hidden">
-            <img src="Media/AcceLErandoWebsite.png" alt="AcceLErando" class = "project-img">
+            <img src="Media/AcceLErandoWebsite.webp" alt="AcceLErando" class = "project-img" loading="lazy">
             <div class="project-content-container">
                 <h3 class="article-title proj-content">FRC 2024 - CRESCENDO</h3>
-                <p class="article-content-sleek"> This year, my highschool team competed in the 2024 FRC season,
+                <p class="article-content-sleek"> In 2024, my high school team competed in the FRC CRESCENDO season
                     with our robot, AcceLErando. As our team's former <bold>Programming Lead and Vice-Captain</bold>, I bolstered
                     our team with many structural revisions to ensure efficient communication between subteams.
-                    While programming our <bold>omnidirection swerve drivetrain</bold>, I supervised my subteam to ensure that <bold>code quality and structure</bold> was maintained across the entire <bold>Java</bold> project.
+                    While programming our <bold>omnidirectional swerve drivetrain</bold>, I supervised my subteam to ensure that <bold>code quality and structure</bold> was maintained across the entire <bold>Java</bold> project.
                 </p>
 
                 <div class="link-button-container">
@@ -217,7 +205,7 @@
         </section>
 
         <section class="project-section hidden">
-            <img src="Media/FTCWebsite.png" alt="FTC" class = "project-img">
+            <img src="Media/FTCWebsite.png" alt="FTC" class = "project-img" loading="lazy">
             <div class="project-content-container"> 
                 <h3 class="article-title">FTC 2024 - CENTERSTAGE</h3>
                 <p class="article-content-sleek"> As a project for my Gr. 12 Computer Engineering course, my team
@@ -253,7 +241,6 @@
                 <li class="article-content-sleek">HTML</li>
                 <li class="article-content-sleek">CSS</li>
                 <li class="article-content-sleek">JS/TS</li>
-                <li class="article-content-sleek">MySQL</li>
                 <li class="article-content-sleek">SQL</li>
                 <li class="article-content-sleek">Node.js</li>
 
@@ -298,7 +285,7 @@
                 <div class = "mini-skill-container">
                 <ul class="row">
                 <li class="article-content-sleek">C++ Scripting</li>
-                <li class="article-content-sleek">Graph Scripting</li>
+                <li class="article-content-sleek">Blueprints</li>
                 <li class="article-content-sleek">Level Design</li>
                 <li class="article-content-sleek">Playtesting</li>
                 <li class="article-content-sleek">Optimization</li>

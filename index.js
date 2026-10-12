@@ -7,13 +7,13 @@ var mouseCoordinates = [0,0];
 var activeElement = null;
 var activeElementCenter = [0, 0];
 
-rotators.forEach(rotator => {
 document.addEventListener("mousemove", (event) => {
     mouseCoordinates[0] = event.clientX;
     mouseCoordinates[1] = event.clientY;
     rotateElementNew();
-})
+});
 
+rotators.forEach(rotator => {
 rotator.addEventListener("mouseover", (event) => {
     activeElement = findParentByID(event.target);
     activeElementCenter = calculateElementCenter(activeElement.getBoundingClientRect());
@@ -51,11 +51,10 @@ function animate(timestamp) {
     rotators.forEach((card) => {
         if (card != activeElement) {
             const elapsedTime = timestamp - (startTime+card.timeOffsetms);
-            progressV = (elapsedTime % durationV) / durationV;
-            progressH = (elapsedTime % durationH) / durationH;
+            const progressV = (elapsedTime % durationV) / durationV;
+            const progressH = (elapsedTime % durationH) / durationH;
             //console.log(Math.sin(progress*Math.PI*2)*30);
             card.style.transform = `rotateX(${Math.sin(progressV*Math.PI*2)*7}deg) rotateY(${Math.sin(progressH*Math.PI*2)*4}deg)`;
-            console.log(card.style);
         }
     });
     requestAnimationFrame(animate);
