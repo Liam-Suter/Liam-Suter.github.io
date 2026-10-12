@@ -210,83 +210,28 @@ article#about-me {
     border-bottom: 1px solid grey;
     background-color: white;
     margin: 0px;
-    padding-right: 30%;
-    padding-left: 5%;
+    padding: 30px 16px;
 }
-
 
 #about-me-container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin-left: 10%;
+    max-width: 760px;
+    margin: 0 auto;
 }
 
-@media (max-width: 1200px) {
-    article#about-me {
-        padding-right: 20%;
-    }
-}
-
-@media (max-width: 900px) {
-    #about-me-container {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        margin-right: 30px;
-        margin-left: 30px;
-        gap: 0px;
-    }
-
-    article#about-me {
-        text-align: left;
-        padding: 0px;
-        padding-right: 5%;
-        padding-left: 5%
-    }
-
-    #about-me-1 {
-        margin-top: 0px;
-        
-    }
-}
-
-#about-me-1 {
-    margin-bottom: 0px;
-    
-}
-
-#about-me-3 {
-    margin-top: 30px;
-}
-
-
-
-#about-me-mini-container2 {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-
-
-
-#about-me-mini-container2 > h2 {
+#about-me-container > h2 {
     margin-top: 0px;
-    text-align: center;
     border-bottom: 2px solid black;
     width: 120px;
     padding-bottom: 10px;
 }
 
-#profile-img {
-    width: 150px;
-    height: 150px;
+#about-me-1 {
     margin-bottom: 0px;
-    border-radius: 50%;
+}
+
+#about-me-3 {
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 article {
